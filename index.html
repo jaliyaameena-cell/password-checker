@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Strength Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="card">
+    <h1>🎄 Password Strength Checker</h1>
+    <p class="subtitle">Create a strong and safe password</p>
+
+    <input 
+      type="password" 
+      id="passwordInput" 
+      placeholder="Enter your password"
+      oninput="checkStrength()"
+    />
+
+    <div class="strength-bar">
+      <div id="strengthProgress"></div>
+    </div>
+
+    <p id="strengthText">Strength: —</p>
+
+    <ul class="rules">
+      <li>✔ At least 8 characters</li>
+      <li>✔ Uppercase & lowercase letters</li>
+      <li>✔ Numbers</li>
+      <li>✔ Special characters (!@#$%)</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
